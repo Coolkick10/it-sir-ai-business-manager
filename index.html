@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css">
+<title>IT Sir AI Business Manager</title>
+</head>
+<body>
+<div class="app">
+<header>
+  <div><div class="eyebrow">IT SIR</div><h1>AI Business Manager</h1><p>Business • Projects • Tasks • Personal</p></div>
+  <button id="installBtn" class="icon-btn" hidden>＋</button>
+</header>
+<main>
+<section class="hero"><div><span>Good day, IT</span><h2>What needs your attention?</h2><p id="date"></p></div><div class="orb">IT</div></section>
+<section class="grid stats">
+  <div class="card"><small>Tasks</small><strong id="taskCount">0</strong><span>open</span></div>
+  <div class="card"><small>Projects</small><strong>4</strong><span>active</span></div>
+  <div class="card"><small>Focus</small><strong>MUNCH IT</strong><span>today</span></div>
+</section>
+<section><div class="section-head"><h3>Quick Actions</h3></div>
+<div class="quick">
+<button data-action="task">＋ Add Task</button><button data-action="sales">📊 Sales</button>
+<button data-action="call">☎ Call Record</button><button data-action="project">🚀 Project</button>
+</div></section>
+<section><div class="section-head"><h3>Manager Modules</h3></div>
+<div class="modules">
+<button class="module"><b>🍿</b><span>MUNCH IT</span><small>Sales & operations</small></button>
+<button class="module"><b>📈</b><span>Business Metrics</span><small>Targets & performance</small></button>
+<button class="module"><b>📞</b><span>Call Records</span><small>Follow-ups</small></button>
+<button class="module"><b>📋</b><span>Tasks</span><small id="taskLabel">Your action list</small></button>
+<button class="module"><b>🚀</b><span>Projects</span><small>Track progress</small></button>
+<button class="module"><b>💰</b><span>Finance</span><small>Income & expenses</small></button>
+<button class="module"><b>👤</b><span>Personal</span><small>Goals & admin</small></button>
+<button class="module"><b>🧘</b><span>Wellbeing</span><small>Private area</small></button>
+</div></section>
+<section class="notice"><b>🔐 Privacy first</b><p>This free app stores task data on this device. Do not enter sensitive contacts, health records, passwords, API keys, or financial secrets into the public app.</p></section>
+<section class="tasks"><div class="section-head"><h3>My Tasks</h3><button id="clearDone">Clear done</button></div><div id="taskList"></div></section>
+</main>
+<nav><button class="active">⌂<span>Home</span></button><button>📊<span>Business</span></button><button>✓<span>Tasks</span></button><button>⚙<span>More</span></button></nav>
+</div>
+<div id="modal" class="modal" hidden><div class="sheet"><button id="close" class="close">×</button><h3 id="modalTitle">Add Task</h3><input id="taskInput" placeholder="What needs to be done?"><button id="saveTask" class="primary">Save Task</button></div></div>
+<script src="app.js"></script>
+</body></html>
